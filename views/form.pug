@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 #{heading}
+    form(action='/new', method='post')
+        input(type='text', name='authorname', placeholder='Name...')
+        input(type='text', name='authortext', placeholder='Text...')
+        input(type='submit', value='Submit')
+        
